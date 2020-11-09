@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#caja-contenedora {
+    display: flex;
+    background-color: #f3f3f3;
+    max-width: 100vw;
+    height: 100vh;
+}
+
+#caja-izda {
+    display: flex;
+    width: 60%;
+}
+
+#caja-dcha {
+    display: block;
+    width: 40%;
+    margin: 0em 3em 3em 3em;
+}
+
+#titulo {
+    margin-top: 3em;
+    margin-left: 3.5em;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    margin-left: 3.5em;
+    color: #999999;
+}
+
+#caja-email-check,
+#caja-pass-check {
+    display: flex;
+    margin-left: 3.5em;
+    justify-content: space-around;
+    background-color: white;
+}
+
+label {
+    font-size: 0.8em;
+}
+
+#caja-email, 
+#caja-pass {
+    display: flex;
+    padding: 1em 0em 1em 3.5em;
+    flex-direction: column;
+    height: auto;
+    color: #e5e3e4;
+}
+
+#email-check, 
+#pass-check {
+    display: flex;
+}
+
+#email-check label, 
+#pass-check label{
+    display: none;
+}
+
+#email-check input, 
+#pass-check input {
+    margin-right: 1em;
+}
+
+
+/* crea checkbox */
+#checkbox {
+    position: relative;
+}
+
+#checkbox label { /* circulo */
+    position: absolute;
+    background-color: #fff;
+    border: 0.1em solid #999999;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+#checkbox label:after { /* rectangulo */
+    position: absolute;
+    border: 0.2em solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 0.3em;
+    width: 0.6em;
+    top: 0.35em;
+    left: 0.35em;
+    transform: rotate(-45deg);
+}
+
+#checkbox input[type="checkbox"] {
+    visibility: hidden;
+    margin-top: 0.3em;
+}
+
+#checkbox input[type="checkbox"]:checked + label {
+    background-color: #66bb6a;
+    border-color: #66bb6a;
+}
+
+#checkbox input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+/* checkbox terminado */
+
+hr {
+    visibility: hidden;
+    margin: 0px;
+}
+
+#email, 
+#pass {
+    background-color: white;
+    color: #777777;
+    font-size: 0.8em;
+    border: none;
+}
+
+#caja-pass-check #checkbox {
+    visibility: hidden;
+}
+
+
+
+
+#caja-remember-forget {
+    display: flex;
+}
+
+#caja-remember-forget label, span {
+    font-size: 0.8em;
+    color: #999999;
+}
+
+#caja-remember #checkbox, 
+#caja-forget #checkbox {
+    height: 2em;
+}
+
+#caja-remember {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: 3.5em;
+}
+
+#caja-remember label {
+    padding-left: 1.5em;
+}
+
+#caja-forget {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+#login, 
+#account {
+    background-color: #3b8bfa;
+    border-radius: 50px;
+    border: none;
+    height: 3em;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+#login {
+    width: 9em;
+}
+
+#account {
+    width: 12em;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+#caja-social {
+    margin-top: 1px;
+    margin-bottom: 0px;
+    margin-left: 3.5em;
+    height: auto;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    background-position:center;
+    border: none;
+    cursor: pointer;
+}
+
+#facebook {
+    background-image: url(../img/facebook_50.png);
+    background-repeat: no-repeat;
+}
+
+#twitter {
+    background-image: url(../img/twitter_50.png);
+    background-repeat: no-repeat;
+}
+
+#google_plus {
+    background-image: url(../img/google_plus_50.png);
+    background-repeat: no-repeat;
+}
+
+
+
+
+@media (max-width: 950px){
+    #caja-izda {
+        width: 40%;
+    }
+
+    #caja-dcha {
+        width: 60%;
+    }
+}
+
+@media (max-width: 900px){    
+    #caja-dcha {
+        margin: 0em 3em 3em 1em;
+    }
+    
+    #titulo {
+        margin-left: 1.5em;
+    }
+    
+    p {
+        margin-left: 3.5em;
+        color: #999999;
+    }
+    
+    #caja-email-check, 
+    #caja-pass-check {
+        margin-left: 2.5em;
+    }
+    
+    #caja-email, 
+    #caja-pass {
+        padding: 1em 0em 1em 1.5em;
+    }
+
+    #caja-social, 
+    #caja-remember {
+        margin-left: 1em;
+    }
+
+    #caja-remember-forget label, span {
+        color: #555555;
+        font-weight: bold;
+    }
+    
+    button {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (max-width: 650px){
+    #caja-izda {
+        display: none;
+    }
+
+    #caja-dcha {
+        width: 100%;
+        background-image: url(../img/te-hour_650.png);
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 565px){
+    #caja-dcha {
+        background-image: url(../img/te-hour_400.png);
+    }
+}
+
+@media (max-width: 500px){    
+    button {
+        height: 30px;
+        width: 30px;
+    }
+        
+    #facebook {
+        background-image: url(../img/facebook_30.png);
+    }
+
+    #twitter {
+        background-image: url(../img/twitter_30.png);
+    }
+
+    #google_plus {
+        background-image: url(../img/google_plus_30.png);
+    }
+}
+
+@media (max-width: 450px){
+    #caja-dcha {
+        background-image: url(../img/te-hour_300.png);
+    }
+}
