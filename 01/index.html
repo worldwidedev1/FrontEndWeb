@@ -1,93 +1,99 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
 		/>
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Ejercicio refuerzo 1</title>
-</head>
-<body>
-    <div id="caja-contenedora">
-        <div id="caja-superior">
-            
-        </div>
-        <div id="caja-inferior">
+		<link rel="stylesheet" href="./css/styles.css" />
+		<title>Ejercicio refuerzo 1</title>
+	</head>
+	<body>
+		<div id="caja-contenedora">
+			<div id="caja-superior"></div>
+			<div id="caja-inferior"></div>
+			<div id="caja-flota">
+				<div id="caja-flota-izda">
+					<form action="">
+						<h2 id="titulo">Sign In to Your Account</h2>
+						<div id="caja-inputs">
+							<label for="user">Username or Email:</label>
+							<input
+								type="text"
+								name="user"
+								id="user"
+								placeholder="Username or Email"
+							/>
+							<label for="pass">Password:</label>
+							<input
+								type="password"
+								name="pass"
+								id="pass"
+								placeholder="Password"
+							/>
+						</div>
+						<div id="caja-button-check">
+							<button type="submit" id="login">Login Now!</button>
+							<div id="caja-remember">
+								<input
+									type="checkbox"
+									name="remember"
+									checked
+								/>
+								<label for="remember">Remember Me</label>
+							</div>
+						</div>
+						<div id="caja-pass-register">
+							<a href=""><p>Lost your password?</p></a>
+							<a href=""><p>Register Now</p></a>
+						</div>
+					</form>
+				</div>
 
-        </div>
-
-        <div id="caja-flota">
-            <div id="caja-flota-izda">
-                <form action="">
-                    <h2 id="titulo">Sign In to Your Account</h2>
-
-                    <div id="caja-inputs">
-                        <label for="user">Username or Email:</label>
-                        <input
-                            type="text"
-                            name="user"
-                            id="user"
-                            placeholder="Username or Email"
-                        >
-                        <label for="pass">Password:</label>
-                        <input
-                            type="text"
-                            name="pass"
-                            id="pass"
-                            placeholder="Password"
-                        >
-                    </div>
-
-                    <div id="caja-button-check">
-                        <button type="submit" id="login">
-                            <a href="#">Login Now</a>
-                        </button>
-                        <div id="caja-remember">
-                            <input type="checkbox" name="remember" checked>
-                            <label for="remember">Remember Me</label>
-                        </div>
-                    </div>
-                    <div id="caja-pass-register">
-                        <a href=""><p>Lost your password?</p></a>
-                        <a href=""><p>Register Now</p></a>
-                    </div>
-                    
-                </form>
-            </div>
-            
-            <div id="caja-flota-dcha">
-                <h2 id="titulo">Get In Touch</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <div id="caja-telefono">
-                    <img src="./img/telefono-fijo.jpg" alt="Teléfono fijo" id="icono">
-                    <div id="text">
-                        <span>8 800 567.890.11</span>
-                        <p>Mon-Fri 9am-6pm</p>
-                    </div>
-                </div>
-                <div id="caja-correo">
-                    <img src="./img/avion-papel.jpg" alt="Avión de papel" id="icono">
-                    <div id="text">
-                        <span><a href="">info@mexopixel.com</a></span>
-                        <p>online support</p>
-                    </div>
-                </div>
-                <div id="caja-direccion">
-                    <img src="./img/bandera-roja.jpg" alt="Bandera roja" id="icono">
-                    <div id="text">
-                        <span>Melbourne, Australia</span>
-                        <p>795 South Park Avenue</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-</body>
+				<div id="caja-flota-dcha">
+					<h2 id="titulo">Get In Touch</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+						sed do eiusmod tempor incididunt ut labore et dolore
+						magna aliqua.
+					</p>
+					<div id="caja-telefono">
+						<img
+							src="./img/telefono-fijo.jpg"
+							alt="Teléfono fijo"
+							id="icono"
+						/>
+						<div id="text">
+							<span>8 800 567.890.11</span>
+							<p>Mon-Fri 9am-6pm</p>
+						</div>
+					</div>
+					<div id="caja-correo">
+						<img
+							src="./img/avion-papel.jpg"
+							alt="Avión de papel"
+							id="icono"
+						/>
+						<div id="text">
+							<span><a href="">info@mexopixel.com</a></span>
+							<p>online support</p>
+						</div>
+					</div>
+					<div id="caja-direccion">
+						<img
+							src="./img/bandera-roja.jpg"
+							alt="Bandera roja"
+							id="icono"
+						/>
+						<div id="text">
+							<span>Melbourne, Australia</span>
+							<p>795 South Park Avenue</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/custom.js"></script>
+	</body>
 </html>
